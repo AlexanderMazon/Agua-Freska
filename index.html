@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AguaFreska</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  </head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="./index.html"><img src="./img/logo.png"class="logo"></a>
+            <div class="toggle" onclick="toggleMenu()"></div>
+            <ul class="navigation">
+                 <li><a href="#">Home</a></li>
+                 <li><a href="#">Tienda</a></li>
+                 <li><a href="#">Servicios</a></li>
+                 <li><a href="#">Contacto</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="texBox">
+                <h2>Prueba la Frescura</h2>
+                <p>No te quedes con sed en esta temporadas de calor, ven a disfrutar junto con tu familia  la frescura de nuestras malteadas</p>
+                  <a href="#">Comprar</a>
+            </div>
+            <!--Carusel --->
+            <div class="imgBox">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="/img/naranja.png" alt=""></div>
+                      <div class="swiper-slide"><img src="/img/sandia.png" alt=""></div>
+                      <div class="swiper-slide"><img src="/img/mango.png" alt=""></div>
+                      <div class="swiper-slide"><img src="/img/crema.png" alt=""></div>
+
+                    </div>
+                  </div>
+            </div>
+        </div>
+                 <ul class="sci">
+                   <li><a href="https://www.linkedin.com/in/erick-alexander-mercado-mazon-554884184/"target="back"><img src="./img/linkedin-brands.svg" alt=""></a></li>
+                   <li><a href="#"><img src="./img/instagram-brands.svg" alt=""></a></li>
+                   <li><a href="#"><img src="./img/facebook-brands.svg" alt=""></a></li>
+                   <li><a href="#"><img src="./img/youtube-brands.svg" alt=""></a></li>
+               
+                </ul>
+    </section>
+    <footer>
+     <div class="fotter">
+       <p>
+        &copy; 2021|Todos los Derechos Reservados
+        <a href="https://www.linkedin.com/in/erick-alexander-mercado-mazon-554884184/" target="_black">EAM <i class="fab fa-linkedin"></i>
+        </a>
+       </p>
+     </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-----SLIDER--->
+ <!-- Initialize Swiper -->
+ <script>
+  var swiper = new Swiper('.swiper-container', {
+    effect: 'cube',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 200,
+      modifier: 1,
+      slideShadows: true,
+    },
+    loop:true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
+
+  function toggleMenu(){
+    const menuToggle = document.querySelector('.toggle');
+    const navigation = document.querySelector('.navigation');
+    menuToggle.classList.toggle('active')
+    navigation.classList.toggle('active')
+
+  }
+</script>
+</body>
+</html>
