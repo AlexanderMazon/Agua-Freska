@@ -13,7 +13,7 @@ section{
     padding:100px;
     display: flex;
     justify-content: space-between;
-    background: url("../img/WALLPAPER.gif")no-repeat ;
+    background: url(../img/WALLPAPER.gif)no-repeat ;
     background-size: cover;
 }
 section .circle{
@@ -230,7 +230,7 @@ header .navigation.active
     position: relative;
     width:30px;
     height: 30px;
-    background: url( "menu.png");
+    background: url(../img/menu.png);
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: center;
@@ -241,7 +241,7 @@ header .navigation.active
 {
    position: fixed;
    right: 40px;
-    background: url("close.png");
+    background: url(../img/close.png);
     background-size: 25px;
     background-repeat: no-repeat;
     background-position: center; 
