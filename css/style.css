@@ -13,7 +13,7 @@ section{
     padding:100px;
     display: flex;
     justify-content: space-between;
-    background: url("WALLPAPER.gif")no-repeat ;
+    background: url("../img/WALLPAPER.gif")no-repeat ;
     background-size: cover;
 }
 section .circle{
